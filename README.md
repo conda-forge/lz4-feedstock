@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-lz4-green.svg)](https://anaconda.org/conda-forge/lz4)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-lz4-green.svg)](https://anaconda.org/conda-forge/lz4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lz4.svg)](https://anaconda.org/conda-forge/lz4) |
 
 Installing lz4
 ==============
