@@ -12,21 +12,22 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
     - python
     - pip
     - pytest-runner
     - setuptools_scm
     - pkgconfig
-    - lz4-c 1.8.1
+    - lz4-c
   run:
     - python
-    - lz4-c 1.8.1
+    - lz4-c
 
 test:
   imports:
