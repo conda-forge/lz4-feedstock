@@ -1,6 +1,6 @@
 {% set name = "lz4" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "9ede632d668995d6148942022c025c0f7ea0d97c275c099f9ad156e02cc1711e" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "166aff2fbb2fee39f4ed58e8e7c1ed8a8ce72915832a100ced7a1634ac655a6f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
