@@ -1,6 +1,6 @@
 {% set name = "lz4" %}
-{% set version = "2.1.6" %}
-{% set sha256 = "3c03f6b52b136a61b3168e875753a60d171a3efbab3601d66402a78dd20de4d2" %}
+{% set version = "2.1.8" %}
+{% set sha256 = "c39df87275a2b34963ebfe3369961fc70d0475802964a20158c69a3e6f32a833" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   skip: True  # [win and vc<14]
   script: python -m pip install --no-deps --ignore-installed .
 
