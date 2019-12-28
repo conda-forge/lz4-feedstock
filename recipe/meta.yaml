@@ -1,6 +1,6 @@
 {% set name = "lz4" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "b666e2d04648f656b6af7d863bc7e50bd72bc00c5c569f89ead010c29c5facb4" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "34bf394c9f4b69ccfdc08d875188c3bfab86adc8f122593dbb39a0726a131280" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   skip: True  # [win and vc<14]
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
