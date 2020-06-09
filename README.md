@@ -3,7 +3,7 @@ About lz4
 
 Home: https://github.com/python-lz4/python-lz4
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
