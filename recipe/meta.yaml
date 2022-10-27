@@ -1,6 +1,6 @@
 {% set name = "lz4" %}
-{% set version = "4.0.0" %}
-{% set sha256 = "57c5dfd3b7dae833b0d2b2c1aafd7f9d0dfcab40683d183d010c67c9fd1beca3" %}
+{% set version = "4.0.2" %}
+{% set sha256 = "083b7172c2938412ae37c3a090250bfdd9e4a6e855442594f86c3608ed12729b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
