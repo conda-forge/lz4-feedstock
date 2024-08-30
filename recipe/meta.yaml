@@ -1,19 +1,16 @@
 {% set name = "lz4" %}
 {% set version = "4.3.3" %}
-{% set sha256 = "01fe674ef2889dbb9899d8a67361e0c4a2c833af5aeb37dd505727cf5d2a131e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 01fe674ef2889dbb9899d8a67361e0c4a2c833af5aeb37dd505727cf5d2a131e
 
 build:
   number: 1
-  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -26,6 +23,7 @@ requirements:
     - python
     - pip
     - pytest-runner
+    - setuptools
     - setuptools_scm
     - pkgconfig
     - lz4-c
