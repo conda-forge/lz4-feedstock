@@ -1,5 +1,5 @@
 {% set name = "lz4" %}
-{% set version = "4.3.3" %}
+{% set version = "4.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01fe674ef2889dbb9899d8a67361e0c4a2c833af5aeb37dd505727cf5d2a131e
+  sha256: 91ed5b71f9179bf3dbfe85d92b52d4b53de2e559aa4daa3b7de18e0dd24ad77d
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
