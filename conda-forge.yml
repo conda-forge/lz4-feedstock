@@ -3,7 +3,7 @@ build_platform:
 conda_build:
   pkg_format: '2'
 conda_forge_output_validation: true
-conda_build_tool: ratter-build
+conda_build_tool: rattler-build
 bot:
   automerge: true
 conda_install_tool: pixi
